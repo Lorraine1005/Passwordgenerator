@@ -1,0 +1,100 @@
+/* COLOR SCHEME 
+
+MAIN BACKGROUND COLOR - #1C1C1C
+TEXT BLOCK BACKGROUND COLOR - #273549
+HIGHLIGHT TEXT COLOR - #10B981
+NORMAL TEXT COLOR - #FFF
+
+*/
+html {
+  font-size: 62.5%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #1c1c1c;
+  font-family: "Times New Roman", Times, serif;
+}
+main {
+  text-align: center;
+  margin: 10em auto;
+  max-width: 50rem;
+  height: 65vh;
+  padding: 3em 5em 1em;
+  background-color: #273549;
+  border-radius: 3px;
+}
+.hero-heading {
+  color: #fff;
+  font-size: 4rem;
+}
+.hero-heading span {
+  color: #10b981;
+}
+.subheading {
+  margin-top: 2em;
+  color: #ffffffb7;
+  font-size: 1.6rem;
+}
+/* PASSWORD GENERATION BUTTONS STYLING */
+.password-generation-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.btn {
+  width: 15em;
+  margin-top: 2em;
+  padding: 1em 2em;
+  background-color: #10b981;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+/* PASSWORD DISPLAY BUTTONS STYLING */
+.password-display-btns {
+  margin-top: 3em;
+  border-top: 2px solid #ffffff24;
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+.password-display-btn {
+  width: 15em;
+  height: 2.5em;
+  margin-top: 2em;
+  background-color: #202f43c5;
+  color: #10b981;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 601px) and (max-width: 850px) {
+  main {
+    margin-top: 6em;
+    height: 50vh;
+  }
+}
+@media (min-width: 301px) and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .password-display-btns,
+  .password-generation-btns {
+    flex-wrap: wrap;
+  }
+  main {
+    height: 70vh;
+  }
+}
+@media (max-width: 300px) {
+  main {
+    padding-top: 6em;
+    padding-bottom: 3em;
+  }
+}
