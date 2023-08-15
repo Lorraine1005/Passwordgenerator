@@ -1,4 +1,3 @@
-"use strict";
 const characters = [
   "A",
   "B",
@@ -96,11 +95,17 @@ let PasswordEl1 = document.getElementById("password-el-1");
 let PasswordEl2 = document.getElementById("password-el-2");
 
 function generatePasswords() {
+  let password = "";
   for (let i = 0; i <= 15; i++) {
     let randomIndex = Math.floor(Math.random() * characters.length);
-    PasswordEl1.textContent += characters[randomIndex];
-    PasswordEl2.textContent += characters[randomIndex];
+    password += characters[randomIndex];
   }
+  return password;
+}
+
+function renderPassword() {
+  PasswordEl1.textContent = generatePasswords();
+  PasswordEl2.textContent = generatePasswords();
 }
 function resetPasswords() {
   PasswordEl1.textContent = "";

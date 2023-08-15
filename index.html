@@ -8,20 +8,21 @@
   </head>
   <body>
     <main>
+      <header>
       <h1 class="hero-heading">Generate a <span>random password</span></h1>
-      <p class="subheading">Never use an insecure password again.</p>
+      <p class="subheading">Never use an insecure password again.</p></header>
       <!-- PASSWORD GENERATION BUTTONS -->
       <section class="password-generation-btns">
-        <button class="btn" onclick="generatePasswords()">
+        <button class="password-generation-btn" onclick="renderPassword()">
           Generate Passwords
         </button>
-        <button class="btn" onclick="resetPasswords()"
+        <button class="password-generation-btn" onclick="resetPasswords()"
         >Reset Passwords</buttonclas>
       </section>
       <!-- PASSWORD DISPLAY BUTTONS -->
       <section class="password-display-btns">
-        <button class="password-display-btn" id="password-el-1" ></button>
-        <button class="password-display-btn" id="password-el-2" ></button>
+        <p class="password-display-btn" id="password-el-1" > </p>
+        <p class="password-display-btn" id="password-el-2" > </p>
       </section>
  
     </main>
